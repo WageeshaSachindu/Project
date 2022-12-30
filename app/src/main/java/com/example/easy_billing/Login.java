@@ -6,6 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+import com.google.android.material.button.MaterialButton;
+
 
 public class Login extends AppCompatActivity {
 
@@ -15,14 +22,30 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         getSupportActionBar().hide();
-        Button login = findViewById(R.id.Login_id);
 
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this,SelectTariff.class);
-                startActivity(intent);
+                TextView username =(TextView) findViewById(R.id.username);
+                TextView password =(TextView) findViewById(R.id.password);
+
+                MaterialButton loginbtn = (MaterialButton) findViewById(R.id.loginbtn);
+
+                //admin and admin
+
+                loginbtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(username.getText().toString().equals("ebill") && password.getText().toString().equals("12345")){
+                            //correct
+
+                            Intent i = new Intent(Login.this,SelectTariff.class);
+                            startActivity(i);
+                        }else
+                            //incorrect
+                            Toast.makeText(Login.this,"USERNAME OR PASSWORD WRONG",Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+
             }
-        });
-    }
-}
+        }
+
+

@@ -15,8 +15,8 @@
 
         <ImageView
             android:id="@+id/left_icon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_baseline_arrow_back_24">
 
@@ -33,10 +33,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Business"
+        android:textColor="#070707"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,6 +48,7 @@
         android:layout_marginTop="70dp"
         android:layout_marginEnd="20dp"
         android:text="Date "
+        android:textColor="#070707"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/etSelectDate"
         app:layout_constraintHorizontal_bias="0.463"
@@ -61,7 +62,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Select Date"
+        android:hint="Select Date"
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tvSelectDate"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -74,6 +75,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:text="Electricity Account No."
+        android:textColor="#070707"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextElecAccNo"
         app:layout_constraintHorizontal_bias="0.0"
@@ -88,6 +90,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:text="Meter Reading"
+        android:textColor="#070707"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/editTextMeterReading"
         app:layout_constraintHorizontal_bias="0.0"
@@ -101,7 +104,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter Account No."
+        android:hint="Enter Account No."
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/elecAccNo"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -113,7 +116,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter Meter Reading"
+        android:hint="Enter Meter Reading"
         android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/meterReading"
         app:layout_constraintEnd_toEndOf="parent" />
