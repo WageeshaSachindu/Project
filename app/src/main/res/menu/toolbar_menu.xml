@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/Weather_id"
+                android:icon="@drawable/ic_baseline_wb_sunny_24"
+                android:title="Weather Record"
+                app:showAsAction="never">
+
+            </item>
+        </menu>
+
+    </item>
+
+</menu>
